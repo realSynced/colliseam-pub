@@ -1,0 +1,98 @@
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Hide on unhover */
+.scroll:not(:hover)::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* ProjectsGrid */
+
+
+
+
+/* .................................. */
+.rbg {
+  background: radial-gradient(circle at 50% 50%, rgba(140, 173, 255, 0.416) 0%, rgb(255, 255, 255) 40%);
+  background-position: fixed;
+}
+
+.infRotate {
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  /* bottom: 0; */
+}
+
+.curve::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: rgba(133, 150, 192, 0.986);
+  transform: translate(85%, 0%);
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: rgba(140, 173, 255, 1);
+  z-index: -2;
+}
+
+.custom-shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(168% + 1.3px);
+  height: 178px;
+}
+
+.custom-shape-divider-top .shape-fill {
+  fill: #f3f3f3;
+}

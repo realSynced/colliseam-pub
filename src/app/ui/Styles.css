@@ -1,0 +1,4 @@
+.panel,
+.panel2 {
+  z-index: -50000000;
+}

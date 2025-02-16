@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "types": ["react"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/dashboard/(overview)/page.jsx",
+    "src/app/ui/landing-sections/section2.jsx",
+    "src/app/ui/animations/FadeIn.tsx",
+    "src/app/accounts/signup/form.tsx",
+    "src/app/accounts/signup/form.tsx",
+    "src/app/accounts/settings/components/ChngPRFL.jsx",
+    "src/app/accounts/get-started/page.jsx",
+    "src/app/accounts/userData.js",
+    "src/app/accounts/login/form.tsx",
+    "src/app/accounts/get-started/form.jsx",
+    "src/global/functionality/storing.js",
+    "src/app/profile/[userprofile]/page.jsx",
+    "src/app/learn/courses/[coursename]/page.jsx",
+    "src/app/accounts/login/page.jsx",
+    "src/app/accounts/signup/page.jsx",
+    "src/app/api/email/route.ts",
+    "src/app/ui/user-session/logged-in.jsx",
+    "src/utils/supabase/superclient.js",
+    "src/utils/supabase/checks/functs.ts",
+    "src/app/ui/components/Navbar.jsx",
+    "src/app/(main)/projects/components/ProjectsGrid.jsx",
+    "src/app/(main)/ui/components/Notifications/Notifications.tsx",
+    "src/app/accounts/reset/page.jsx",
+    "src/app/(main)/project/[projectname]/[tabname]/channelTypes/Discussion.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
